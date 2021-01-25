@@ -13,6 +13,7 @@ async function csvParser(filename){
   
     fs.writeFile(jsonfileName,result, (error)=>{
       if(error) return console.error(error)
+      console.log(`${jsonfileName} criado com sucesso!`)
     })
   }
 
